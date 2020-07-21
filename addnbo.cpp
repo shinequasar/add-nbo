@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
          fileList[i] = argv[i];
     }
    
-      printf("\n>> BoB 9기 보안제품개발트랙 : 정소연 <<\n");
+    printf("\n>> BoB 9기 보안제품개발트랙 : 정소연 <<\n");
     printf(">> 멘토님 : 이경문(gilgil) <<\n\n");
     
       FILE *a_fp, *b_fp; 
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
          printf(">> 파일 읽기 성공!\n\n");
      }
     
-		fread(record_a,4,1,a_fp);
+	   fread(record_a,4,1,a_fp);
 	   uint32_t* ap = reinterpret_cast<uint32_t*>(record_a);
 	   uint32_t an = *ap; // TODO
 	   
