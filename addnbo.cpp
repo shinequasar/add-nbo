@@ -4,7 +4,7 @@
 #include <netinet/in.h>
 
 
- uint32_t readFile(int record[], int size, int count, FILE *fp){
+ uint32_t readFile(int record[], int size, int count, FILE *fp){ //함수 형태로 반복되는 건 빼주기
       fread(record,size,count,fp);
 	   uint32_t* p = reinterpret_cast<uint32_t*>(record);
 	   uint32_t n = *p; // TODO
